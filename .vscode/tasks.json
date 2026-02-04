@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build C (TDM-GCC)",
+      "type": "shell",
+      "command": "& \"C:/TDM-GCC-64/bin/gcc.exe\"",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-std=c11",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

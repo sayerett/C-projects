@@ -1,0 +1,11 @@
+a. What is the difference between passing arguments by arguments and passing arguments by reference?
+Passing arguments by value means that the function receives a copy of the argument, and any changes made to it inside the function will not affect the original value outside the function. Passing arguments by reference means that the function receives the memory address of the argument, and changes made to it inside the function will affect the original value outside the function.
+
+b. What values does the rand function generate?
+The rand function generates random integer values between 0 and RAND_MAX, a constant defined in the <stdlib.h> library.
+
+c. How do you randomize a program? How do you scale or shift the values produced by the rand function?
+To randomize a program, you can use the srand function to set the seed value for the rand function.
+
+d. What is a recursive function? What is a base case?
+A recursive function is a function that calls itself.  A base case is the condition in the recursive function that stops the recursion and returns a value. Without a base case, the function would continue to call itself indefinitely, causing a stack overflow.
